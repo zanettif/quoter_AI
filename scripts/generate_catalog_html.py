@@ -27,8 +27,8 @@ with INPUT_CSV.open(newline='', encoding='utf-8') as csvfile:
         for row in reader:
             f.write("<tr>")
             f.write(f"<td>{row.get('productName', 'Sin nombre')}</td>")
-            f.write(f"<td>{row.get('sku', 'N/A')}</td>")
-            f.write(f"<td>{row.get('mpn', 'N/A')}</td>")
+            f.write(f"<td>{row.get('SKU', 'N/A')}</td>")
+            f.write(f"<td>{row.get('MPN', 'N/A')}</td>")
             f.write(f"<td>${row.get('price', 'N/D')}</td>")
             f.write(f"<td>{row.get('stock', 'Sin datos')} unidades</td>")
             f.write("</tr>\n")
